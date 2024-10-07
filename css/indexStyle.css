@@ -1,8 +1,13 @@
+body {
+    background-color: #7C4D3A;
+}
+
 p {
     text-align: center;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 50px;
+    color: #FFF000;
 }
 
 img {
@@ -17,9 +22,10 @@ div {
     margin-top: 5%;
     background-color: #F1654C;
     border: none;
+    border-radius: 10px;
     padding: 10px 50px;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;
     text-align: center;
@@ -30,11 +36,12 @@ div {
     background-color: #16A085;
 }
 
-#Design {
+#design {
     float: right;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
     margin-top: 4.5%;
     padding-right: 20px;
 }
