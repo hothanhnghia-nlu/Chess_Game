@@ -1,10 +1,10 @@
 var CoDen = {
-	Tot: 'images/chessPieces/Tot_Den.png',
-	Tuong: 'images/chessPieces/Tuong_Den.png',
-	Ma: 'images/chessPieces/Ma_Den.png',
-	Xe: 'images/chessPieces/Xe_Den.png',
-	Hau: 'images/chessPieces/Hau_Den.png',
-	Vua: 'images/chessPieces/Vua_Den.png',
+	Tot: 'images/chessPieces/Tot_Trang.png',
+	Tuong: 'images/chessPieces/Tuong_Trang.png',
+	Ma: 'images/chessPieces/Ma_Trang.png',
+	Xe: 'images/chessPieces/Xe_Trang.png',
+	Hau: 'images/chessPieces/Hau_Trang.png',
+	Vua: 'images/chessPieces/Vua_Trang.png',
 	Rong: "images/chessPieces/Rong.png",
 	// Name
 	Tot_Name: 'Tot_Den',
@@ -16,12 +16,12 @@ var CoDen = {
 }
 
 var CoDo = {
-	Tot: 'images/chessPieces/Tot_Do.png',
-	Tuong: 'images/chessPieces/Tuong_Do.png',
-	Ma: 'images/chessPieces/Ma_Do.png',
-	Xe: 'images/chessPieces/Xe_Do.png',
-	Hau: 'images/chessPieces/Hau_Do.png',
-	Vua: 'images/chessPieces/Vua_Do.png',
+	Tot: 'images/chessPieces/Tot_Den.png',
+	Tuong: 'images/chessPieces/Tuong_Den.png',
+	Ma: 'images/chessPieces/Ma_Den.png',
+	Xe: 'images/chessPieces/Xe_Den.png',
+	Hau: 'images/chessPieces/Hau_Den.png',
+	Vua: 'images/chessPieces/Vua_Den.png',
 	Rong: "images/chessPieces/Rong.png",
 	// Name
 	Tot_Name: 'Tot_Do',
@@ -33,7 +33,7 @@ var CoDo = {
 }
 
 var Mau = {
-	Trang: "255,255,255",
-	Den: "170,182,155",
+	Trang: "252,231,169",
+	Den: "124,223,126",
 	NuocDi: "246,205,97"
 }
