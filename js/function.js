@@ -66,13 +66,13 @@ function isChieuVua(Name){
 function isCoDo(X, Y){
 	var Temp = GetName(X.toString() + Y);
 	Temp = Temp.substring(Temp.indexOf('_') + 1 , Temp.length);
-	return Temp.localeCompare("Do") == 0 ? true : false;
+	return Temp.localeCompare("Den") == 0 ? true : false;
 }
 
 function isCoDen(X, Y){
 	var Temp = GetName(X.toString() + Y);
 	Temp = Temp.substring(Temp.indexOf('_') + 1 , Temp.length);
-	return Temp.localeCompare("Den") == 0 ? true : false;
+	return Temp.localeCompare("Trang") == 0 ? true : false;
 }
 
 function isRong(X, Y){

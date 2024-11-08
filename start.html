@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GAME CỜ VUA | Group 4 - SPM</title>
+</head>
+<link rel="icon" href="images/icon/page_icon.png"/>
+<link rel="stylesheet" type="text/css" href="css/startStyle.css"/>
+<script type="text/javascript" src="js/start.js"></script>
+<script>
+    function Go() {
+        window.location.href = "run.html";
+    }
+
+    // Hiển thị popup
+    function showPopup() {
+        document.getElementById("timerPopup").style.display = "block";
+        document.getElementById("btn_con").style.visibility = "hidden";
+    }
+
+    // Đóng popup
+    function closePopup() {
+        document.getElementById("timerPopup").style.display = "none";
+        document.getElementById("btn_con").style.visibility = "visible";
+    }
+    function startGame() {
+    // Lấy giá trị từ các select trong popup
+    const timePerPlayerElement = document.getElementById("timePerPlayer");
+    const incrementPerMoveElement = document.getElementById("incrementPerMove");
+
+    const timePerPlayer = timePerPlayerElement.value;
+    const incrementPerMove = incrementPerMoveElement.value;
+    
+    // Lưu vào localStorage
+    localStorage.setItem('timePerPlayer', timePerPlayer);
+    localStorage.setItem('incrementPerMove', incrementPerMove);
+    
+    // Chuyển hướng sang trang rapid.html
+    window.location.href = "rapid.html";
+}
+// function startGame() {
+//     // Kiểm tra lại xem phần tử có tồn tại trước khi lấy giá trị
+//     const timePerPlayerElement = document.getElementById("timePerPlayer");
+//     const incrementPerMoveElement = document.getElementById("incrementPerMove");
+    
+//     if (timePerPlayerElement && incrementPerMoveElement) {
+//         // Lấy giá trị từ phần tử
+//         const timePerPlayer = timePerPlayerElement.value;
+//         const incrementPerMove = incrementPerMoveElement.value;
+
+//         // Lưu vào localStorage
+//         localStorage.setItem("timePerPlayer", timePerPlayer);
+//         localStorage.setItem("incrementPerMove", incrementPerMove);
+
+//         window.location.href = "rapid.html";
+//         // Thông báo cho người dùng hoặc tiếp tục xử lý
+//     } else {
+//         console.log("Không tìm thấy phần tử!");
+//     }
+// }
+</script>
+<body>
+    <div>
+        <!-- <p><strong>GAME CỜ VUA 2 NGƯỜI</strong></p> -->
+        <!-- <img src="images/icon/chess_img.png" width="300" height="230" alt="chess image"/> -->
+        <input class="btn_1" type="button" value="CỜ VUA CHIẾN" onClick=""/>
+        <div class="con_btn" id="btn_con">
+            <button class="custom-button" onclick="Go()">
+                <div class="button-icon">
+                    <!-- Biểu tượng, có thể là file ảnh hoặc SVG -->
+                    <img src="images/icon/icon button.png" alt="Icon">
+                </div>
+                <div class="button-text">Classical</div>
+            </button>
+            <button class="custom-button" onclick="showPopup()">
+                <div class="button-icon">
+                    <!-- Biểu tượng, có thể là file ảnh hoặc SVG -->
+                    <img src="images/icon/icon button.png" alt="Icon">
+                </div>
+                <div class="button-text">Rapid</div>
+            </button>
+        </div>
+s
+
+        <div id="timerPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3>Rapid</h3>
+                
+                <label>Thời gian cho mỗi người</label>
+                <select id="timePerPlayer">
+                    <option value="600">10 phút</option>
+                    <option value="900">15 phút</option>
+                    <option value="1200">20 phút</option>
+                    <option value="1500">25 phút</option>
+                </select>
+        
+                <label>Thời gian cộng thêm cho mỗi lượt</label>
+                <select id="incrementPerMove">
+                    <option value="2">2 giây</option>
+                    <option value="5">5 giây</option>
+                    <option value="7">7 giây</option>
+                    <option value="10">10 giây</option>
+                </select>
+                
+                <button onclick="startGame()">Chơi</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
