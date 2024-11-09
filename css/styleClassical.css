@@ -1,0 +1,125 @@
+body{
+
+	
+}
+/*CSS Div Main*/
+#divMain{
+
+	background-image: url("Wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/*CSS Div ThongTin*/
+#divNguoiChoiCoDen{
+	float:left;
+	width: 25%;
+	height:100%;
+}
+
+
+/*CSS Div Ban co*/
+#divBanCo{
+	padding-top: 9%;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+/*CSS Div ChoiLai*/
+#divNguoiChoiCoDo{
+	float: left;
+	width: 25%;
+	height:100%;
+}
+#PointCoDen {
+	
+}
+
+#PointCoDo {
+	color:#FF0004;
+}
+
+
+/*<!--CSS Table ban co-->*/
+#BanCo{
+	margin:auto;
+	height: 600px;
+	width: 600px;
+	border-spacing: 0;
+}
+
+#BanCo td {
+	margin: 20px;
+	height: 70px;
+	width: 70px;
+	/* border-style:solid;
+	border-color: #030303; */
+	border: 5px solid black;
+	border-collapse:collapse;
+	border-width: 2px;
+	
+}
+
+#BanCo td:hover {
+  border-width: 2px;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: #1BA39C;
+}
+
+img{
+	display: block;
+    margin: 0 auto;
+}
+
+.player-info-coTrang, .player-info-coDen {
+    display: flex;
+    width : 70%;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgba(240, 248, 255, 0.4);
+    color: #333; /* Text color */
+    width: max-content; /* Để container vừa với nội dung */
+}
+
+
+.player-info-coTrang {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 180%;
+    
+}
+.player-info-coDen {
+    margin-top: 35%;
+}
+.icon {
+    margin-right: 10px; /* Khoảng cách giữa icon và nội dung bên phải */
+}
+
+.icon img {
+    width: 24px; /* Kích thước icon */
+    height: 24px;
+}
+
+.player-details {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.hidden {
+    display: none;
+}
