@@ -45,8 +45,8 @@ function DatCo(){
 	document.getElementById("i11").src = CoDo.Xe;
 	document.getElementById("i12").src = CoDo.Ma;
 	document.getElementById("i13").src = CoDo.Tuong;
-	document.getElementById("i14").src = CoDo.Vua;
-	document.getElementById("i15").src = CoDo.Hau;
+	document.getElementById("i14").src = CoDo.Hau;
+	document.getElementById("i15").src = CoDo.Vua;
 	document.getElementById("i16").src = CoDo.Tuong;
 	document.getElementById("i17").src = CoDo.Ma;
 	document.getElementById("i18").src = CoDo.Xe;

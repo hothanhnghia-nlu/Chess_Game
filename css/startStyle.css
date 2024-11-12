@@ -11,7 +11,7 @@
 
 p {
     text-align: center;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 50px;
     color: #FFF000;
@@ -37,7 +37,7 @@ div {
     background-color: #40E0D0;
     border: none;
     border-radius: 10px;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #080808;
@@ -70,7 +70,7 @@ div {
 
 #design {
     float: right;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;
     color: #FFFFFF;
@@ -87,7 +87,7 @@ div {
     color: black; /* Màu chữ */
     width: 300px;
     height: 100px;
-    padding: 10px 15px;
+    padding: 10px 0px;
     border: none;
     border-radius: 10px;
     font-size: 18px;
@@ -99,12 +99,13 @@ div {
 .button-icon {
     /* background-color: #009688; Màu nền của phần biểu tượng */
     display: flex;
-    margin-left: 0%;
+    margin-left: 0;
     border-radius: 5px;
     align-items: center;
     justify-content: flex-start;
     margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
 }
+
 
 /* Biểu tượng */
 .button-icon img {
@@ -115,7 +116,7 @@ div {
 
 /* Văn bản trên nút */
 .button-text {
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #080808;

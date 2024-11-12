@@ -9,7 +9,7 @@ body {
 
 p {
     text-align: center;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 50px;
     color: #FFF000;
@@ -27,7 +27,7 @@ div {
     background-color: #40E0D0;
     border: none;
     border-radius: 10px;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #080808;
@@ -53,7 +53,7 @@ div {
 
 #design {
     float: right;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;
     color: #FFFFFF;

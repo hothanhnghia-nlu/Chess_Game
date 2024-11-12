@@ -1,11 +1,32 @@
 
 
 
+// Lấy thời gian từ localStorage
+ let timePerPlayer = parseInt(localStorage.getItem("timePerPlayer"),10)|| 600; // Mặc định là 10 phút nếu không có giá trị
+//let timePerPlayer = 50;
+let incrementPerMove = parseInt(localStorage.getItem("incrementPerMove"),10) || 5; // Mặc định là 5 giây nếu không có giá trị
+let timeLeft = timePerPlayer;
+
+// Hàm đếm ngược
+function initTimer() {
+    const timerElementDen = document.getElementById('timerDen');
+    const timerElementDo = document.getElementById('timerDo');
+
+    // Tính toán phút và giây
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    
+    // Định dạng thời gian cho đẹp
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    timerElementDo.innerText = `${minutes}:${seconds}`;
+    timerElementDen.innerText = `${minutes}:${seconds}`;
+    
+}
 
 
 let blackTimeLeft =  timePerPlayer; // Thời gian còn lại của người chơi cờ đen
 let blackTime;
-let redTimeLeft = timePerPlayer;
+let redTimeLeft = timePerPlayer;//Thời gian còn lại của người chơi cờ đo
 let redTime;
 let blackTimerInterval; // Interval của đồng hồ cờ đen
 let isBlackTurn = true; // Biến kiểm tra lượt đi của người chơi, bắt đầu với cờ đỏ
