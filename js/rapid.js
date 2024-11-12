@@ -2,8 +2,8 @@
 
 
 // Lấy thời gian từ localStorage
-// let timePerPlayer = parseInt(localStorage.getItem("timePerPlayer"),10)|| 600; // Mặc định là 10 phút nếu không có giá trị
-let timePerPlayer = 50;
+ let timePerPlayer = parseInt(localStorage.getItem("timePerPlayer"),10)|| 600; // Mặc định là 10 phút nếu không có giá trị
+//let timePerPlayer = 50;
 let incrementPerMove = parseInt(localStorage.getItem("incrementPerMove"),10) || 5; // Mặc định là 5 giây nếu không có giá trị
 let timeLeft = timePerPlayer;
 
@@ -21,8 +21,8 @@ function initTimer() {
     timerElementDo.innerText = `${minutes}:${seconds}`;
     timerElementDen.innerText = `${minutes}:${seconds}`;
     
-
 }
+
 
 let blackTimeLeft =  timePerPlayer; // Thời gian còn lại của người chơi cờ đen
 let blackTime;

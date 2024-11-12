@@ -22,7 +22,6 @@
     var PointDo = 0, PointDen = 0;
 
     function KhoiTao() {
-
         VeBanCoTrangDen();
         DatCo();
         document.getElementById("PointCoDo").innerHTML = "Point: 0";
@@ -89,13 +88,15 @@
                 if (isQuanDo) {
                     PointDo += GetDiem(Name);
                     if (isChieuVua(Name) || PointDo == 880) {
-                        showWinner('người chơi 2');
+                        alert("QUÂN ĐỎ ĐÃ CHIẾN THẮNG");
+                        KhoiTao();
                     }
                     document.getElementById("PointCoDo").innerHTML = "Point: " + PointDo;
                 } else {
                     PointDen += GetDiem(Name);
                     if (isChieuVua(Name) || PointDen == 880) {
-                        showWinner('người chơi 1');
+                        alert("QUÂN ĐEN ĐÃ CHIẾN THẮNG");
+                        KhoiTao();
                     }
                     document.getElementById("PointCoDen").innerHTML = "Point: " + PointDen;
                 }
@@ -105,36 +106,13 @@
             VeBanCoTrangDen();
         }
     }
-    function showPopup() {
-        document.getElementById("outPopup").style.display = "block";
-    }
-    function Out() {
-        window.location.href = "start.html";
-    }
-    // Đóng popup
-    function closePopup() {
-        document.getElementById("outPopup").style.display = "none";
-    }
-    function closeWinner() {
-        document.getElementById('winner_Popup').style.display="none";
-        KhoiTao();
-    }
-    function showWinner(player) {
-
-        document.getElementById("winner_Popup").style.display = "block";
-        document.getElementById("winner_h3").textContent= `Chúc mừng ${player} giành chiến thắng!`;
-    }
 </script>
 
 <body onload="KhoiTao()">
 
 <div id="divMain">
     <div id="divNguoiChoiCoDen">
-        <div class="btn_out">
-            <button id="out" onclick="showPopup()">Thoát</button>
-        </div>
         <div class="player-info-coTrang">
-            
             <div class="icon">
                 <img id="iCoDen" src="images/user/user_enable.png" alt="Icon" />
             </div>
@@ -142,26 +120,6 @@
                 <span>Người chơi 1</span>
                 <span class="hidden" id="PointCoDen"> Point: 0</span>
             </div>
-        </div>
-    </div>
-    <div id="outPopup" class="popup">
-        <div class="popup-content">
-            <h3>Bạn có chắc muốn tiếp tục không?</h3>
-            <div class="popup_btn">
-                <button onclick="closePopup()" class="btn_ou1">Tiếp tục</button>
-                <button onclick="Out()" class="btn_ou2">Hủy bỏ ván chơi</button>
-            </div>
-
-        </div>
-    </div>
-    <div id="winner_Popup" class="popup">
-        <div class="popup-winner">
-            <h3 id="winner_h3">  </h3>
-            <div class="popup_btn">
-                <button onclick="Out()" class="btn_ou1">Trở về</button>
-                <button onclick="closeWinner()" class="btn_ou2">Chơi lại</button>
-            </div>
-
         </div>
     </div>
 
