@@ -30,7 +30,6 @@ body{
 	float:left;
 	width: 50%;
 	height: 100%;
-
 }
 /*CSS Div ChoiLai*/
 #divNguoiChoiCoDo{
@@ -79,7 +78,6 @@ img{
     margin: 0 auto;
 }
 
-
 .player-info-coTrang, .player-info-coDen {
     display: flex;
     width : 70%;
@@ -97,7 +95,7 @@ img{
 .player-info-coTrang {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 165%;
+	margin-top: 170%;
     
 }
 .player-info-coDen {
@@ -120,11 +118,6 @@ img{
     align-items: flex-start;
 }
 
-.timer {
-    font-size: 14px;
-    color: #000000;
-    margin-top: 4px; /* Khoảng cách giữa tên và đồng hồ */
-}
 
 
 .hidden {
@@ -218,4 +211,3 @@ img{
     cursor: pointer;
     border: 2px solid #00A2FF;
 }
-
