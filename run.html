@@ -22,7 +22,6 @@
     var PointDo = 0, PointDen = 0;
 
     function KhoiTao() {
-
         VeBanCoTrangDen();
         DatCo();
         document.getElementById("PointCoDo").innerHTML = "Point: 0";
@@ -89,13 +88,15 @@
                 if (isQuanDo) {
                     PointDo += GetDiem(Name);
                     if (isChieuVua(Name) || PointDo == 880) {
-                        showWinner('người chơi 2');
+                        alert("QUÂN ĐỎ ĐÃ CHIẾN THẮNG");
+                        KhoiTao();
                     }
                     document.getElementById("PointCoDo").innerHTML = "Point: " + PointDo;
                 } else {
                     PointDen += GetDiem(Name);
                     if (isChieuVua(Name) || PointDen == 880) {
-                        showWinner('người chơi 1');
+                        alert("QUÂN ĐEN ĐÃ CHIẾN THẮNG");
+                        KhoiTao();
                     }
                     document.getElementById("PointCoDen").innerHTML = "Point: " + PointDen;
                 }
@@ -130,11 +131,7 @@
 
 <div id="divMain">
     <div id="divNguoiChoiCoDen">
-        <div class="btn_out">
-            <button id="out" onclick="showPopup()">Thoát</button>
-        </div>
         <div class="player-info-coTrang">
-            
             <div class="icon">
                 <img id="iCoDen" src="images/user/user_enable.png" alt="Icon" />
             </div>

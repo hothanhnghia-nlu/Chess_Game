@@ -19,8 +19,8 @@ function initTimer() {
     timerElementDo.innerText = `${minutes}:${seconds}`;
     timerElementDen.innerText = `${minutes}:${seconds}`;
     
-
 }
+
 
 let blackTimeLeft =  timePerPlayer; // Thời gian còn lại của người chơi cờ đen
 let blackTime;
