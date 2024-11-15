@@ -38,43 +38,19 @@
     // Chuyển hướng sang trang rapid.html
     window.location.href = "rapid.html";
 }
-// function startGame() {
-//     // Kiểm tra lại xem phần tử có tồn tại trước khi lấy giá trị
-//     const timePerPlayerElement = document.getElementById("timePerPlayer");
-//     const incrementPerMoveElement = document.getElementById("incrementPerMove");
-    
-//     if (timePerPlayerElement && incrementPerMoveElement) {
-//         // Lấy giá trị từ phần tử
-//         const timePerPlayer = timePerPlayerElement.value;
-//         const incrementPerMove = incrementPerMoveElement.value;
-
-//         // Lưu vào localStorage
-//         localStorage.setItem("timePerPlayer", timePerPlayer);
-//         localStorage.setItem("incrementPerMove", incrementPerMove);
-
-//         window.location.href = "rapid.html";
-//         // Thông báo cho người dùng hoặc tiếp tục xử lý
-//     } else {
-//         console.log("Không tìm thấy phần tử!");
-//     }
-// }
 </script>
 <body>
     <div>
-        <!-- <p><strong>GAME CỜ VUA 2 NGƯỜI</strong></p> -->
-        <!-- <img src="images/icon/chess_img.png" width="300" height="230" alt="chess image"/> -->
         <input class="btn_1" type="button" value="CỜ VUA CHIẾN" onClick=""/>
         <div class="con_btn" id="btn_con">
             <button class="custom-button" onclick="Go()">
                 <div class="button-icon">
-                    <!-- Biểu tượng, có thể là file ảnh hoặc SVG -->
                     <img src="images/icon/icon button.png" alt="Icon">
                 </div>
                 <div class="button-text">Classical</div>
             </button>
             <button class="custom-button" onclick="showPopup()">
                 <div class="button-icon">
-                    <!-- Biểu tượng, có thể là file ảnh hoặc SVG -->
                     <img src="images/icon/icon button.png" alt="Icon">
                 </div>
                 <div class="button-text">Rapid</div>
