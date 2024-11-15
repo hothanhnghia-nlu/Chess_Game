@@ -6,19 +6,54 @@
 </head>
 <link rel="icon" href="images/icon/page_icon.png"/>
 <link rel="stylesheet" type="text/css" href="css/indexStyle.css"/>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
 <script>
     function Go() {
         window.location.href = "start.html";
     }
+    function showRules() {
+            document.getElementById("rulesPopup").style.display = "flex";
+        }
+
+        // Hàm đóng popup
+        function closeRules() {
+            document.getElementById("rulesPopup").style.display = "none";
+        }
 </script>
 <body>
     <div>
         <!-- <p><strong>GAME CỜ VUA 2 NGƯỜI</strong></p> -->
         <!-- <img src="images/icon/chess_img.png" width="300" height="230" alt="chess image"/> -->
         <input class="btn_1" type="button" value="CỜ VUA CHIẾN" onClick=""/>
-        <div>
-            <input class="btn" type="button" value="Bắt Đầu" onClick="Go()"/>
+        <div class="con_btn" id="btn_con">
+                <input class="btn" type="button" value="Bắt Đầu" onClick="Go()"/>
+                <input class="btn" type="button" value="Luật chơi" onClick="showRules()"/>
         </div>
+        <div class="popup-background" id="rulesPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closeRules()">&times;</button>
+                <h3>Luật chơi cờ vua chiến</h3>
+                <ol>
+                    <li><strong>Lượt đi đầu tiên: Bên Trắng đi trước. Mỗi bên di chuyển một quân theo lượt, với mục tiêu chiếm ưu thế và đặt đối phương vào thế phòng thủ.</strong></li>
+                    <li><strong>Khai cuộc: Mục tiêu của khai cuộc là phát triển các quân vào vị trí trung tâm và an toàn. Ưu tiên phát triển Tượng, Mã, Hậu, và Xe sau 1-2 nước đi Tốt.</strong></li>
+                    <li><strong>Các nước đi đặc biệt:</strong>
+                        <ul>
+                            <li><strong>Phong cấp: Khi Tốt tiến đến hàng cuối của đối phương, có thể đổi thành Hậu, Xe, Mã, hoặc Tượng.</strong></li>
+                            <li><strong>Nhập thành: Chỉ thực hiện khi không có quân giữa Vua và Xe, Vua không bị chiếu, và cả Vua và Xe chưa di chuyển trước đó.</strong></li>
+                            <li><strong>Bắt Tốt qua đường: Tốt có thể bắt Tốt của đối phương nếu Tốt đó di chuyển 2 ô và đứng cạnh nó, nhưng chỉ trong nước đi ngay sau đó.</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>Kết thúc ván cờ:</strong>
+                        <ul>
+                            <li><strong>Chiếu hết: Khi Vua bị chiếu mà không thể thoát, ván cờ kết thúc.</strong></li>
+                            <li><strong>Hòa: Ván cờ có thể hòa nếu không bên nào còn nước đi hợp lệ (hết nước đi), hai bên thỏa thuận hòa, thế cờ lặp lại 3 lần, không bắt quân hay đi Tốt trong 50 nước, hoặc khi không đủ lực lượng để chiếu hết.</strong></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
